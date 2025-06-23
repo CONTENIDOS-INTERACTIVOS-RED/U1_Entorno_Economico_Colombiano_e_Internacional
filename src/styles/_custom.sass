@@ -17,13 +17,25 @@
 
 .bg-color
   &-1
-    background-color: #EAF8FD
+    background-color: #CEE29D
   &-2
-    background-color: #FFFBE8
+    background-color: #E2DACC
   &-3
-    background-color: #F0E9F6
+    background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(214, 245, 251, 1) 50%, rgba(255, 255, 255, 1) 100%)
   &-4
-    background-color: #EAF8FD
+    background-color: #1D7083
+  &-5
+    background-color: #FFE1B9
+  &-6
+    background-color: #C1F0FA
+  &-7
+    background-color: #F6F3EF
+  &-8
+    background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(233, 249, 253, 1) 100%)
+  &-9
+    background-color: #E9F9FD
+  &-10
+    background-color: #E6F0CD
   &-info
     background-color: #E8EEFD
   &-sintesis
@@ -51,13 +63,16 @@
 
 .bg-fondo
   &-1
-    background-image: url("../assets/bg/bg1.png") !important
+    background-image: url("../assets/bg/bg1.svg") !important
     background-position: top
   &-2
-    // background-image: url("../assets/bg/bg2.png") !important
+    background-image: url("../assets/bg/bg2.png") !important
     background-position: bottom
+  &-3
+    background-image: url("../assets/bg/bg3.svg") !important
+    background-position: top
   &-slider
-    background-image: url("../assets/bg/bg-slider.png") !important
+    background-image: url("../assets/bg/bg-slider.svg") !important
     background-position: bottom
 
 // Variables
@@ -97,15 +112,15 @@ $custom-card-img-height: 322px
 
 
 .acordion__header
-  background-color: lighten($color-acento-contenido, 25%) !important
+  background-color: lighten($color-secundario, 35%) !important
 
 .acordion__header--active
-  background-color: $color-acento-contenido !important
+  background-color: $color-secundario !important
   h4, i
     color: #000 !important
 
 .acordion__contenido
-  background-color: lighten($color-acento-contenido, 27%) !important
+  background-color: lighten($color-secundario, 37%) !important
 
 
 .anexo__texto
