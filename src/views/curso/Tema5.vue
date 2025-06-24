@@ -134,6 +134,13 @@
         .bg-color-4.p-4.h-100(data-aos="fade-left")
           p.mb-0.text-white Además, el Estado desempeña un rol redistributivo, mediante políticas como el subsidio a los sectores más vulnerables o la aplicación de impuestos progresivos, que permiten equilibrar las desigualdades económicas. También promueve la estabilidad macroeconómica a través del manejo de la inflación, el empleo y la inversión pública. Por ejemplo, durante una recesión, el gobierno puede aumentar el gasto público para dinamizar la economía y generar empleo.
 
+
+
+    .bg-full-width.border-top.actividad.bg-color-actividad
+      .p-4.p-md-5
+        #Actividad                
+          <Actividad :cuestionario="cuestionario"/>
+
     .bg-full-width.border-top.color-primario
       .p-4.p-md-5
         h2(data-aos="fade-left") MATERIAL COMPLEMENTARIO
@@ -171,8 +178,184 @@
 </template>
 
 <script>
+import Actividad from '@/components/actividad/Actividad.vue'
 export default {
-  name: 'Tema2',
+  name: 'Tema3',
+  components: {
+    Actividad,
+  },
+  data() {
+    return {
+      cuestionario: {
+        tema: 'Herramientas colaborativas para la construcción de paz',
+        titulo: 'Ponte a prueba',
+        introduccion:
+          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+        barajarPreguntas: true,
+        preguntas: [
+          {
+            id: 1,
+            texto:
+              '¿Cuál de los siguientes conceptos explica la necesidad de elegir entre distintas alternativas debido a los recursos limitados?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Satisfacción total',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Costo de oportunidad ',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Abundancia relativa',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Ley de oferta',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 2,
+            texto:
+              '¿Qué pregunta fundamental responde a “¿Para quién producir?” en economía?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Qué bienes se fabrican',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Quién distribuye los ingresos',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Cómo se asignan los recursos entre los consumidores ',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Cómo medir la riqueza de un país',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 3,
+            texto:
+              '¿Cuál de los siguientes factores de producción se refiere al uso de habilidades humanas en la creación de bienes o servicios?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Tierra',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Capital',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Trabajo ',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Tecnología',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 4,
+            texto:
+              '¿Cuál de los siguientes ejemplos pertenece al sector secundario de la economía?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Cosecha de arroz',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Elaboración de pan en una panadería ',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Enseñanza en colegios',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Transporte público',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 5,
+            texto:
+              '¿En qué tipo de sistema económico predomina la propiedad colectiva y la planificación estatal de los recursos?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Capitalismo',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Socialismo ',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Economía de mercado',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Economía mixta',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+        ],
+        mensaje_final_aprobado:
+          '¡Felicidades! Has superado la prueba con éxito.',
+        mensaje_final_reprobado:
+          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
+      },
+    }
+  },
   mounted() {
     this.$nextTick(() => {
       this.$aosRefresh()
@@ -181,4 +364,7 @@ export default {
 }
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.bg-color-actividad
+  background-color: #EBF1F5
+</style>

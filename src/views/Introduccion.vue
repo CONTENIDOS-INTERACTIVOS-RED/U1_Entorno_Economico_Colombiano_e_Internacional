@@ -16,7 +16,7 @@
     .bg-full-width.bg-color-3
       .p-4.p-md-5
         p Estos conocimientos permitirán fortalecer habilidades analíticas y críticas, necesarias para comprender los procesos económicos y su influencia en los diferentes sectores de la sociedad. Además, proporcionarán herramientas esenciales para interpretar las realidades económicas tanto de nivel local como internacional, las cuales son fundamentales para una adecuada toma de decisiones en el entorno profesional.
-        p.mb-4 La unidad está estructurada en 7 temas principales:
+        p.mb-4 La unidad está estructurada en 5 temas principales:
 
         .row.justify-content-center.align-items-stretch.mb-3
           .col-lg-4.mb-3.mb-lg-0
@@ -54,7 +54,7 @@
                   h5.mb-2 Tema 4
                   p.mb-0 Sectores económicos.
 
-          .col-lg-4.mb-3.mb-lg-0
+          .col-lg-8.mb-3.mb-lg-0
             .bg-color-1.p-4(data-aos="fade-left").h-100
               .row.align-items-center
                 .col-lg-auto
@@ -62,23 +62,8 @@
                 .col-lg
                   h5.mb-2 Tema 5
                   p.mb-0 Organización social para solucionar el problema económico.
-          .col-lg-4.mb-3.mb-lg-0
-            .bg-color-1.p-4(data-aos="fade-left").h-100
-              .row.align-items-center
-                .col-lg-auto
-                  img(src="@/assets/curso/intro/7.svg", style="max-width: 90px").mx-auto
-                .col-lg
-                  h5.mb-2 Tema 6
-                  p.mb-0 Estructura económica colombiana.
-        .row.justify-content-center.align-items-stretch
-          .col-lg-4.mb-3.mb-lg-0
-            .bg-color-1.p-4(data-aos="fade-left").h-100
-              .row.align-items-center
-                .col-lg-auto
-                  img(src="@/assets/curso/intro/5.svg", style="max-width: 90px").mx-auto
-                .col-lg
-                  h5.mb-2 Tema 7 
-                  p.mb-0 Política económica colombiana.
+
+
     
     .bg-full-width.bg-color-4
       .px-4.px-md-5.py-4

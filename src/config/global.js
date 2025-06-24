@@ -151,64 +151,6 @@ export default {
         ],
       },
       {
-        nombreRuta: 'tema6',
-        icono: 'far fa-file-alt',
-        numero: '6',
-        titulo: 'Estructura económica de Colombia',
-        desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '6.1',
-            titulo:
-              'Composición de los sectores productivos: primario, secundario y terciario',
-            hash: 't_6_1',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '6.2',
-            titulo:
-              'Aportes al Producto Interno Bruto por sector económico, en el 2024',
-            hash: 't_6_2',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '6.3',
-            titulo: 'Evolución histórica de la estructura económica colombiana',
-            hash: 't_6_3',
-          },
-        ],
-      },
-      {
-        nombreRuta: 'tema7',
-        icono: 'far fa-file-alt',
-        numero: '7',
-        titulo: 'Política económica colombiana ',
-        desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '7.1',
-            titulo:
-              'Tierra como recurso natural: características e importancia',
-            hash: 't_7_1',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '7.2',
-            titulo:
-              'Política fiscal en Colombia: ingresos, gastos y deuda pública',
-            hash: 't_7_2',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '7.3',
-            titulo: 'Política monetaria y el papel del Banco de la República',
-            hash: 't_7_3',
-          },
-        ],
-      },
-      {
         nombreRuta: 'sintesis',
         titulo: 'Síntesis',
         desarrolloContenidos: true,
